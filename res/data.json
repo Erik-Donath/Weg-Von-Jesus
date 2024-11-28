@@ -1,6 +1,6 @@
 {
     "minBounds": [0, 0],
-    "maxBounds": [1000, 1000],
+    "maxBounds": [500, 500],
     "map": "res/karte.png",
     "marker": [
       {
@@ -14,6 +14,14 @@
       {
         "position": [100, 300],
         "file": "README.md"
+      },
+      {
+        "position": [250, 250],
+        "file": "res/marker3.md"
+      },
+      {
+        "position": [0, 0],
+        "file": "res/marker4.md"
       }
     ]
   }

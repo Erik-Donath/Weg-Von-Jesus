@@ -1,36 +1,32 @@
 function errorOn404(response) {
-    if(!response.ok) throw new Error("Failed to load Resurce. Status: " + response.status);
+    if(!response.ok)
+        throw new Error("Failed to load resource. Status: " + response.status);
     return response;
 }
 
 document.addEventListener('DOMContentLoaded', function() {
     var map = L.map('map', {
         crs: L.CRS.Simple,
-        minZoom: -3
+        minZoom: 0,
+        maxZoom: 5
     });
 
     function addMarker(position, file) {
         var marker = L.marker(position).addTo(map);
 
         var popup = L.popup({
-            closeButton: true,
+            closeButton: false,
             autoClose: true,
-            closeOnClick: false,
+            closeOnClick: true,
             offset: L.point(0, 20)
         });
-
-        popup.on('contentloaded', function() {
-            popup.getElement().querySelector('img').addEventListener('load', function() {
-                popup.update();
-            });
-        });
-
+        
         fetch(file)
             .then(response => errorOn404(response))
             .then(response => response.text())
             .then(markdown => {
-                var htmlContent = marked.parse(markdown);
-                popup.setContent(htmlContent);
+                var html = marked.parse(markdown);
+                popup.setContent(html);
             })
             .catch(error => {
                 console.error('Failed to load Markdown File: ', error);
@@ -59,5 +55,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 addMarker(markerData.position, markerData.file);
             });
         })
-        .catch(error => console.error('Failed to load JSON File: ', error));
+        .catch(error => {
+            console.error('Failed to load JSON File: ', error);
+            alert("Fehler beim Laden der Hauptdatei.");
+        });
 });
