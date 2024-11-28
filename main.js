@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     var map = L.map('map', {
         crs: L.CRS.Simple,
-        minZoom: 10,
-        maxZoom: 100,
+        minZoom: -3
     });
 
     function addMarker(position, markdownFile) {
