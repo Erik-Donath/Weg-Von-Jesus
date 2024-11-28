@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var bounds = [[0,0], [1000,1000]];
 
     // Benutzerdefiniertes Kartenbild hinzufügen
-    L.imageOverlay('/res/karte.png', bounds).addTo(map);
+    L.imageOverlay('karte.png', bounds).addTo(map);
 
     // Kartenansicht auf die Bildgrenzen setzen
     map.fitBounds(bounds);
