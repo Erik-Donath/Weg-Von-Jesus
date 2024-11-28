@@ -1,6 +1,6 @@
 {
     "minBounds": [0, 0],
-    "maxBounds": [50, 50],
+    "maxBounds": [1000, 1000],
     "map": "res/karte.png",
     "marker": [
       {
