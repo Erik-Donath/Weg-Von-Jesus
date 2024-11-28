@@ -12,7 +12,16 @@ document.addEventListener('DOMContentLoaded', function() {
     var popup = L.popup({
         closeButton: true,
         autoClose: false
-    }).setContent("Dies ist ein interessanter Punkt auf der Karte!");
+    });
+    //.setContent("Dies ist ein interessanter Punkt auf der Karte!");
+
+    fetch('README.md')
+        .then(response => response.text())
+        .then(markdown => {
+            var html = marked.parse(markdown);
+            marker.bindPopup(html, {maxWidth: 500});
+        })
+        .catch(error => console.error('Fehler beim Laden der Markdown-Datei:', error));
 
     marker.on('mouseover', function (e) {
         this.openPopup();
