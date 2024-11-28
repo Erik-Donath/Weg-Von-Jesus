@@ -1,9 +1,19 @@
 {
-    "map": "karte.png",
+    "minBounds": [0, 0],
+    "maxBounds": [50, 50],
+    "map": "res/karte.png",
     "marker": [
       {
         "position": [10, 10],
-        "file": "README.md"
+        "file": "res/marker1.md"
+      },
+      {
+        "position": [10, 20],
+        "file": "res/marker2.md"
+      },
+      {
+        "position": [10, 30],
+        "file": "res/marker3.md"
       }
     ]
   }

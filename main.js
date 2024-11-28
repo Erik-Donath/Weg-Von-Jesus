@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     var map = L.map('map', {
         crs: L.CRS.Simple,
-        minZoom: -3
+        minZoom: 10,
+        maxZoom: 100,
     });
 
     function addMarker(position, markdownFile) {
@@ -25,8 +26,12 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             
         marker.bindPopup(popup);
+
         marker.on('mouseover', function (e) {
             this.openPopup();
+        });
+        marker.on('mouseout', function (e) {
+            this.closePopup();
         });
 
         return marker;
@@ -35,12 +40,14 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('data.json')
         .then(response => response.json())
         .then(data => {
-            var bounds = [[0, 0], [1000, 1000]];
+            var bounds = [data.minBounds, data.maxBounds];
             L.imageOverlay(data.map, bounds).addTo(map);
             map.fitBounds(bounds);
-                data.marker.forEach(markerData => {
-                    addMarker(markerData.position, markerData.file);
-                });
+            map.setMaxBounds(bounds);
+
+            data.marker.forEach(markerData => {
+                addMarker(markerData.position, markerData.file);
+            });
         })
         .catch(error => console.error('Fehler beim Laden der JSON-Daten:', error));
 });
