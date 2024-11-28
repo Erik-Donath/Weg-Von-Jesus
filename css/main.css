@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#map {
+    height: 1000px;
+    width: 100%;
+}
+
+.leaflet-popup-content {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.leaflet-popup-content img {
+    max-width: auto;
+    height: auto;
+}

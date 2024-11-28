@@ -1,42 +1,53 @@
+function errorOn404(response) {
+    if(!response.ok) throw new Error("Failed to load Resurce. Status: " + response.status);
+    return response;
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     var map = L.map('map', {
         crs: L.CRS.Simple,
         minZoom: -3
     });
 
-    function addMarker(position, markdownFile) {
+    function addMarker(position, file) {
         var marker = L.marker(position).addTo(map);
 
         var popup = L.popup({
-            closeButton: false,
-            autoClose: false,
-            closeOnClick: false
+            closeButton: true,
+            autoClose: true,
+            closeOnClick: false,
+            offset: L.point(0, 20)
         });
 
-        fetch(markdownFile)
+        popup.on('contentloaded', function() {
+            popup.getElement().querySelector('img').addEventListener('load', function() {
+                popup.update();
+            });
+        });
+
+        fetch(file)
+            .then(response => errorOn404(response))
             .then(response => response.text())
             .then(markdown => {
                 var htmlContent = marked.parse(markdown);
                 popup.setContent(htmlContent);
             })
             .catch(error => {
-                console.error('Fehler beim Laden der Markdown-Datei:', error);
-                popup.setContent("Fehler beim Laden der Markdown-Datei.");
+                console.error('Failed to load Markdown File: ', error);
+                popup.setContent("Fehler beim Laden.");
             });
             
-        marker.bindPopup(popup);
+        marker.bindPopup(popup, {maxWidth: 500});
 
         marker.on('mouseover', function (e) {
             this.openPopup();
-        });
-        marker.on('mouseout', function (e) {
-            this.closePopup();
         });
 
         return marker;
     }
 
-    fetch('data.json')
+    fetch('res/data.json')
+        .then(response => errorOn404(response))
         .then(response => response.json())
         .then(data => {
             var bounds = [data.minBounds, data.maxBounds];
@@ -48,5 +59,5 @@ document.addEventListener('DOMContentLoaded', function() {
                 addMarker(markerData.position, markerData.file);
             });
         })
-        .catch(error => console.error('Fehler beim Laden der JSON-Daten:', error));
+        .catch(error => console.error('Failed to load JSON File: ', error));
 });
