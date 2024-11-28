@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var marker = L.marker([500, 500]).addTo(map);
     var popup = L.popup({
-        closeButton: false,
+        closeButton: true,
         autoClose: false
     }).setContent("Dies ist ein interessanter Punkt auf der Karte!");
 

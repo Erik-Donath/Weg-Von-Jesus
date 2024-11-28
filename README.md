@@ -1,2 +1,5 @@
 # Weg-Von-Jesus
 Eine Karte, welche unter Github Pages gehostet wird, aufwelcher man bei Verschiedenen Punkten Ereignisse in Jesus lebens sehen kann.
+
+# Project Base
+This project is based on 'leafletjs.com'. Please support their product!
