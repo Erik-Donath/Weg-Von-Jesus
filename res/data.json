@@ -2,6 +2,7 @@
     "minBounds": [0, 0],
     "maxBounds": [500, 500],
     "map": "res/karte.png",
+    
     "marker": [
       {
         "position": [100, 100],

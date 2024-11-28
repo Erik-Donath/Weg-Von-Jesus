@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(response => errorOn404(response))
             .then(response => response.text())
             .then(markdown => {
-                var html = marked.parse(markdown);
-                popup.setContent(html);
+                var content = marked.parse(markdown);
+                popup.setContent("<div class=\"markdown\">" + content + "</div>");
             })
             .catch(error => {
                 console.error('Failed to load Markdown File: ', error);
