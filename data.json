@@ -1,0 +1,9 @@
+{
+    "map": "karte.png",
+    "marker": [
+      {
+        "position": [10, 10],
+        "file": "README.md"
+      }
+    ]
+  }

@@ -4,31 +4,43 @@ document.addEventListener('DOMContentLoaded', function() {
         minZoom: -3
     });
 
-    var bounds = [[0,0], [1000,1000]];
-    L.imageOverlay('karte.png', bounds).addTo(map);
-    map.fitBounds(bounds);
+    function addMarker(position, markdownFile) {
+        var marker = L.marker(position).addTo(map);
 
-    var marker = L.marker([500, 500]).addTo(map);
-    var popup = L.popup({
-        closeButton: true,
-        autoClose: false
-    });
-    //.setContent("Dies ist ein interessanter Punkt auf der Karte!");
+        var popup = L.popup({
+            closeButton: false,
+            autoClose: false,
+            closeOnClick: false
+        });
 
-    fetch('README.md')
-        .then(response => response.text())
-        .then(markdown => {
-            var html = marked.parse(markdown);
-            marker.bindPopup(html, {maxWidth: 500});
+        fetch(markdownFile)
+            .then(response => response.text())
+            .then(markdown => {
+                var htmlContent = marked.parse(markdown);
+                popup.setContent(htmlContent);
+            })
+            .catch(error => {
+                console.error('Fehler beim Laden der Markdown-Datei:', error);
+                popup.setContent("Fehler beim Laden der Markdown-Datei.");
+            });
+            
+        marker.bindPopup(popup);
+        marker.on('mouseover', function (e) {
+            this.openPopup();
+        });
+
+        return marker;
+    }
+
+    fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+            var bounds = [[0, 0], [1000, 1000]];
+            L.imageOverlay(data.map, bounds).addTo(map);
+            map.fitBounds(bounds);
+                data.marker.forEach(markerData => {
+                    addMarker(markerData.position, markerData.file);
+                });
         })
-        .catch(error => console.error('Fehler beim Laden der Markdown-Datei:', error));
-
-    marker.on('mouseover', function (e) {
-        this.openPopup();
-    });
-    marker.on('mouseout', function (e) {
-        this.closePopup();
-    });
-
-    marker.bindPopup(popup);
+        .catch(error => console.error('Fehler beim Laden der JSON-Daten:', error));
 });
