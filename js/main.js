@@ -1,6 +1,6 @@
 function errorOn404(response) {
     if(!response.ok)
-        throw new Error("failed to load resource. Status: " + response.status);
+        throw new Error("Failed to load resource. Status: " + response.status);
     return response;
 }
 
@@ -29,10 +29,8 @@ function parseMarkdown(markdown, path = "") {
 
     const defaultHtmlRenderer = renderer.html;
     renderer.html = function(html) {
-        if (html.href)
-            html.href = adjustHref(html.href);
-        if (html.src)
-            html.src = adjustHref(html.src);
+        if(html.text)
+            html.text = html.text.replace(/(src|href)\s*=\s*"([^"]*)"/g, (_match, attr, value) => `${attr}="${adjustHref(value)}"`);
         return defaultHtmlRenderer.call(this, html);
     };
 
