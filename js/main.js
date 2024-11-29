@@ -46,14 +46,17 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => errorOn404(response))
         .then(response => response.json())
         .then(data => {
-            var bounds = [data.minBounds, data.maxBounds];
-            L.imageOverlay(data.map, bounds).addTo(map);
-            map.fitBounds(bounds);
-            map.setMaxBounds(bounds);
+            var imageBounds = data.imageBounds;
+            var maxBounds = data.maxBounds;
+            L.imageOverlay(data.map, imageBounds).addTo(map);
+            map.fitBounds(imageBounds);
+
+            if(maxBounds) map.setMaxBounds(maxBounds);
 
             data.marker.forEach(markerData => {
                 addMarker(markerData.position, markerData.file);
             });
+            //console.log("Config:\n" + JSON.stringify(data, null, 2));
         })
         .catch(error => {
             console.error('Failed to load JSON File: ', error);

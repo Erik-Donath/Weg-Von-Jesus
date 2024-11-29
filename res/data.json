@@ -1,28 +1,34 @@
 {
-    "minBounds": [0, 0],
-    "maxBounds": [500, 500],
-    "map": "res/karte.png",
-    
-    "marker": [
-      {
-        "position": [100, 100],
-        "file": "res/marker1.md"
-      },
-      {
-        "position": [100, 200],
-        "file": "res/marker2.md"
-      },
-      {
-        "position": [100, 300],
-        "file": "README.md"
-      },
-      {
-        "position": [250, 250],
-        "file": "res/marker3.md"
-      },
-      {
-        "position": [0, 0],
-        "file": "res/marker4.md"
-      }
-    ]
-  }
+  "imageBounds": [
+    [0, 0],
+     [500, 500]
+  ],
+  "maxBounds": [
+    [-150, -150],
+    [650, 650]
+  ],
+  "map": "res/karte.png",
+  
+  "marker": [
+    {
+      "position": [100, 100],
+      "file": "res/marker1.md"
+    },
+    {
+      "position": [100, 200],
+      "file": "res/marker2.md"
+    },
+    {
+      "position": [100, 300],
+      "file": "README.md"
+    },
+    {
+      "position": [250, 250],
+      "file": "res/marker3.md"
+    },
+    {
+      "position": [0, 0],
+      "file": "res/marker4.md"
+    }
+  ]
+}
