@@ -4,6 +4,42 @@ function errorOn404(response) {
     return response;
 }
 
+function parseMarkdown(markdown, path = "") {
+    const renderer = new marked.Renderer();
+
+    function adjustHref(href) {
+        if (!/^(https?:\/\/|data:|mailto:|tel:)/i.test(href)) {
+            href = path + '/' + href;
+        }
+        return href;
+    };
+
+    const defaultImageRenderer = renderer.image;
+    renderer.image = function(image) {
+        if(image.href)
+            image.href = adjustHref(image.href);
+        return defaultImageRenderer.call(this, image);
+    };
+    
+    const defaultLinkRenderer = renderer.link;
+    renderer.link = function(link) {
+        if(link.href)
+            link.href = adjustHref(link.href);
+        return defaultLinkRenderer.call(this, link);
+    }
+
+    const defaultHtmlRenderer = renderer.html;
+    renderer.html = function(html) {
+        if (html.href)
+            html.href = adjustHref(html.href);
+        if (html.src)
+            html.src = adjustHref(html.src);
+        return defaultHtmlRenderer.call(this, html);
+    };
+
+    return marked.parse(markdown, { renderer: renderer });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     var map = L.map('map', {
         crs: L.CRS.Simple,
@@ -25,7 +61,8 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(response => errorOn404(response))
             .then(response => response.text())
             .then(markdown => {
-                var content = marked.parse(markdown);
+                var basePath = file.substring(0, file.lastIndexOf('/'));
+                var content = parseMarkdown(markdown, basePath);
                 popup.setContent("<div class=\"markdown\">" + content + "</div>");
             })
             .catch(error => {

@@ -2,4 +2,4 @@
 
 Ich bin ein toller Marker.
 
-![alt text](res/karte.png)
+![alt text](karte.png)
