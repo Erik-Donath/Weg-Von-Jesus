@@ -1,6 +1,6 @@
 function errorOn404(response) {
     if(!response.ok)
-        throw new Error("Failed to load resource. Status: " + response.status);
+        throw new Error("failed to load resource. Status: " + response.status);
     return response;
 }
 
@@ -8,9 +8,8 @@ function parseMarkdown(markdown, path = "") {
     const renderer = new marked.Renderer();
 
     function adjustHref(href) {
-        if (!/^(https?:\/\/|data:|mailto:|tel:)/i.test(href)) {
+        if (!/^(https?:\/\/|data:|mailto:|tel:)/i.test(href))
             href = path + '/' + href;
-        }
         return href;
     };
 
@@ -40,63 +39,66 @@ function parseMarkdown(markdown, path = "") {
     return marked.parse(markdown, { renderer: renderer });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    var map = L.map('map', {
+function loadMap(data) {
+    const map = L.map('map', {
         crs: L.CRS.Simple,
         minZoom: 0,
         maxZoom: 5
     });
 
-    function addMarker(position, file) {
-        var marker = L.marker(position).addTo(map);
+    const imageBounds = data.imageBounds;
+    const maxBounds = data.maxBounds;
 
+    L.imageOverlay(data.map, imageBounds).addTo(map);
+    map.fitBounds(imageBounds);
+
+    if(maxBounds) map.setMaxBounds(maxBounds);
+
+    data.marker.forEach(markerData => {
+        const position = markerData.position;
+        const file = markerData.file;
+
+        var marker = L.marker(position);
         var popup = L.popup({
             closeButton: false,
             autoClose: true,
-            closeOnClick: true,
-            offset: L.point(0, 20)
+            closeOnClick: true
         });
-        
+
         fetch(file)
             .then(response => errorOn404(response))
             .then(response => response.text())
             .then(markdown => {
-                var basePath = file.substring(0, file.lastIndexOf('/'));
-                var content = parseMarkdown(markdown, basePath);
-                popup.setContent("<div class=\"markdown\">" + content + "</div>");
+                var relativPath = file.substring(0, file.lastIndexOf('/'));
+                var html = parseMarkdown(markdown, relativPath);
+                popup.setContent("<div class=\"markdown\">" + html + "</div>");
             })
             .catch(error => {
-                console.error('Failed to load Markdown File: ', error);
+                console.error('Failed to load Markdown File.', error);
                 popup.setContent("Fehler beim Laden.");
             });
-            
-        marker.bindPopup(popup, {maxWidth: 500});
 
+        marker.bindPopup(popup, {maxWidth: 500});
         marker.on('mouseover', function (e) {
             this.openPopup();
         });
 
-        return marker;
-    }
+        marker.addTo(map);
+    });
 
+    return map;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
     fetch('res/data.json')
         .then(response => errorOn404(response))
         .then(response => response.json())
-        .then(data => {
-            var imageBounds = data.imageBounds;
-            var maxBounds = data.maxBounds;
-            L.imageOverlay(data.map, imageBounds).addTo(map);
-            map.fitBounds(imageBounds);
-
-            if(maxBounds) map.setMaxBounds(maxBounds);
-
-            data.marker.forEach(markerData => {
-                addMarker(markerData.position, markerData.file);
-            });
-            //console.log("Config:\n" + JSON.stringify(data, null, 2));
-        })
+        .then(data => loadMap(data))
         .catch(error => {
-            console.error('Failed to load JSON File: ', error);
-            alert("Fehler beim Laden der Hauptdatei.");
+            console.error("Failed to load map.", error);
+
+            const div = document.getElementById("map");
+            div.innerHTML = "<p class = \"failed\">Fehler beim Laden</p>";
         });
-});
+    }
+);
