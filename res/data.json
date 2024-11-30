@@ -25,6 +25,10 @@
     {
       "position": [0, 0],
       "file": "res/marker4.md"
+    },
+    {
+      "position": [200, 200],
+      "file": "https://raw.githubusercontent.com/Erik-Donath/Weg-von-Jesus/refs/heads/main/res/marker1.md"
     }
   ]
 }
