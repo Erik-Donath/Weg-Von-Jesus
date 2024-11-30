@@ -62,7 +62,7 @@ function addCoordControl(map, position) {
 }
 
 function loadMap(data) {
-    console.log(data);
+    //console.log(data);
 
     const map = L.map('map', {
         crs: L.CRS.Simple,
@@ -70,8 +70,8 @@ function loadMap(data) {
         maxZoom: 5
     });
 
-    const maxBounds = data.maxBounds;
-    const fitBounds = data.fitBounds;
+    const maxBounds = data.maxBound;
+    const fitBounds = data.fitBound;
     if(maxBounds) map.setMaxBounds(maxBounds);
     if(fitBounds) map.fitBounds(fitBounds);
 
@@ -82,8 +82,6 @@ function loadMap(data) {
     data.marker.forEach(markerData => {
         const position = markerData.position;
         const file = markerData.file;
-
-        //console.log(file, position);
 
         var marker = L.marker(position);
         var popup = L.popup({
@@ -113,7 +111,7 @@ function loadMap(data) {
         marker.addTo(map);
     });
 
-    addCoordControl(map, 'bottomright')
+    addCoordControl(map, 'bottomleft')
 
     return map;
 }
