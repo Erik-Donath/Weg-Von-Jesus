@@ -44,13 +44,14 @@ function loadMap(data) {
         maxZoom: 5
     });
 
-    const imageBounds = data.imageBounds;
     const maxBounds = data.maxBounds;
-
-    L.imageOverlay(data.map, imageBounds).addTo(map);
-    map.fitBounds(imageBounds);
-
+    const fitBounds = data.fitBounds;
     if(maxBounds) map.setMaxBounds(maxBounds);
+    if(fitBounds) map.fitBounds(fitBounds);
+
+    data.maps.forEach(mapData => {
+        L.imageOverlay(mapData.file, mapData.bounds).addTo(map);
+    })
 
     data.marker.forEach(markerData => {
         const position = markerData.position;

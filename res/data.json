@@ -1,9 +1,18 @@
 {
-  "imageBounds": [
+  "fitBounds": [
     [0, 0],
     [500, 500]
   ],
-  "map": "res/karte.png",
+
+  "maps": [
+    {
+      "file": "res/maps/karte.png",
+      "bounds": [
+        [0, 0],
+        [500, 500]
+      ]
+    }
+  ],
   
   "marker": [
     {
