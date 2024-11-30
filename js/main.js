@@ -37,7 +37,33 @@ function parseMarkdown(markdown, path = "") {
     return marked.parse(markdown, { renderer: renderer });
 }
 
+function addCoordControl(map, position) {
+    let coordControl = L.control({position: position});
+
+    coordControl.onAdd = function(_map) {
+        let div = L.DomUtil.create('div', 'info coordinates');
+        div.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
+        div.style.padding = '6px 8px';
+        div.style.border = 'none';
+        div.style.borderRadius = '4px';
+        div.style.margin = '10px';
+        div.style.fontFamily = 'Arial';
+        div.style.fontSize = '12px';
+        return div;
+    }
+    coordControl.addTo(map);
+    map.on('mousemove', function(e) {
+        let lat = e.latlng.lat.toFixed(4);
+        let lng = e.latlng.lng.toFixed(4);
+        document.querySelector('.coordinates').innerHTML = `Koordinaten: ${lat}, ${lng}`;
+    });
+
+    return coordControl;
+}
+
 function loadMap(data) {
+    console.log(data);
+
     const map = L.map('map', {
         crs: L.CRS.Simple,
         minZoom: 0,
@@ -56,6 +82,8 @@ function loadMap(data) {
     data.marker.forEach(markerData => {
         const position = markerData.position;
         const file = markerData.file;
+
+        //console.log(file, position);
 
         var marker = L.marker(position);
         var popup = L.popup({
@@ -84,6 +112,8 @@ function loadMap(data) {
 
         marker.addTo(map);
     });
+
+    addCoordControl(map, 'bottomright')
 
     return map;
 }

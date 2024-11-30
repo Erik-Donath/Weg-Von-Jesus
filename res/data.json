@@ -6,7 +6,7 @@
 
   "maps": [
     {
-      "file": "res/maps/karte.png",
+      "file": "res/maps/karte.svg",
       "bounds": [
         [0, 0],
         [500, 500]
@@ -16,28 +16,116 @@
   
   "marker": [
     {
-      "position": [100, 100],
-      "file": "res/marker1.md"
+      "file": "res/Sidon.md",
+      "position": [481, 227]
     },
     {
-      "position": [100, 200],
-      "file": "res/marker2.md"
+      "file": "res/Zarpat.md",
+      "position": [456, 210]
     },
     {
-      "position": [100, 300],
-      "file": "README.md"
+      "file": "res/Tyrus.md",
+      "position": [410, 194]
     },
     {
-      "position": [250, 250],
-      "file": "res/marker3.md"
+      "file": "res/Hermon.md",
+      "position": [425, 307]
     },
     {
-      "position": [0, 0],
-      "file": "res/marker4.md"
+      "file": "res/Caresarea Philippi.md",
+      "position": [400, 300]
+    },
+
+    {
+      "file": "res/Chorszin.md",
+      "position": [318, 277]
     },
     {
-      "position": [200, 200],
-      "file": "https://raw.githubusercontent.com/Erik-Donath/Weg-von-Jesus/refs/heads/main/res/marker1.md"
+      "file": "res/Bethsaida.md",
+      "position": [315, 289]
+    },
+    {
+      "file": "res/Kursi.md",
+      "position": [304, 295]
+    },
+    {
+      "file": "res/Kapernaum.md",
+      "position": [312, 274]
+    },
+    {
+      "file": "res/Genezareth.md",
+      "position": [307, 267]
+    },
+    {
+      "file": "res/Magdala.md",
+      "position": [295, 261]
+    },
+
+    {
+      "file": "res/Kana.md",
+      "position": [290, 230]
+    },
+    {
+      "file": "res/Tiberias.md",
+      "position": [280, 269]
+    },
+    {
+      "file": "res/Nain.md",
+      "position": [248, 235]
+    },
+    {
+      "file": "res/Gadara.md",
+      "position": [253, 293]
+    },
+    {
+      "file": "res/Nazareth.md",
+      "position": [269, 227]
+    },
+
+    {
+      "file": "res/Aenon-Salim.md",
+      "position": [180, 268]
+    },
+    {
+      "file": "res/Gerasa.md",
+      "position": [154, 351]
+    },
+    {
+      "file": "res/Sychar.md",
+      "position": [138, 214]
+    },
+    {
+      "file": "res/Arimathäa.md",
+      "position": [81, 156]
+    },
+    {
+      "file": "res/Ephraim.md",
+      "position": [63, 214]
+    },
+
+    {
+      "file": "res/Jericho.md",
+      "position": [38, 250]
+    },
+    {
+      "file": "res/Emmaus.md",
+      "position": [32, 176]
+    },
+    {
+      "file": "res/Jerusalem.md",
+      "position": [17, 199]
+    },
+    {
+      "file": "res/Betfage.md",
+      "position": [19, 211]
+    },
+    {
+      "file": "res/Betlehem.md",
+      "position": [7, 197]
+    },
+    {
+      "file": "res/Bethanien.md",
+      "position": [12, 212]
     }
   ]
 }
