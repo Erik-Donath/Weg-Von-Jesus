@@ -61,10 +61,8 @@ function addCoordControl(map, position) {
     return coordControl;
 }
 
-function loadMap(data) {
-    //console.log(data);
-
-    const map = L.map('map', {
+function loadMap(div, data) {
+    const map = L.map(div, {
         crs: L.CRS.Simple,
         minZoom: 0,
         maxZoom: 5
@@ -111,20 +109,19 @@ function loadMap(data) {
         marker.addTo(map);
     });
 
-    addCoordControl(map, 'bottomleft')
-
+    //addCoordControl(map, 'bottomleft')
     return map;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const map = document.getElementById('map');
-    fetch(map.dataset.location)
+    const div = document.getElementById('map');
+    fetch(div.dataset.location)
         .then(response => errorOn404(response))
         .then(response => response.json())
-        .then(data => loadMap(data))
+        .then(data => loadMap(div, data))
         .catch(error => {
             console.error("Failed to load map.", error);
-            map.innerHTML = "<p class = \"failed\">Fehler beim Laden</p>";
+            div.innerHTML = "<p class = \"failed\">Fehler beim Laden</p>";
         });
     }
 );
