@@ -65,3 +65,48 @@ Am Abend vor seiner Verhaftung feierte Jesus mit seinen Jüngern das letzte Aben
 ## Verhaftung, Verurteilung und Kreuzigung
 
 Nach seiner Verhaftung im Garten Gethsemane wurde Jesus verhört, verurteilt und schließlich außerhalb der Stadtmauern von Jerusalem gekreuzigt. Die Kreuzigung fand auf dem Hügel Golgatha statt, der sich damals außerhalb der Stadt befand. Heute wird dieser Ort durch die Grabeskirche markiert, die sich innerhalb der Altstadt befindet ([Hebräer 13,12](https://www.bibleserver.com/LUT/Hebr%C3%A4er13%2C12)).
+
+<br>
+
+---
+
+<br>
+
+# Arimathäa
+Josef von Arimathäa war ein reicher Jude und wahrscheinlich ein Mitglied des Sanhedrin, der nach der Kreuzigung von Jesus um den Leichnam bat, um ihn in sein eigenes Grab zu legen ([Matthäus 27,57-60](https://www.bibleserver.com/LUT/Matth%C3%A4us27%2C57-60); [Johannes 19,38](https://www.bibleserver.com/LUT/Johannes19%2C38)).
+
+# Betfage
+Betfage ist ein Dorf in der Nähe von Jerusalem, das im Neuen Testament erwähnt wird. Hier befahl Jesus seinen Jüngern, einen Esel zu holen, auf dem er in die Stadt einreiten sollte ([Matthäus 21,1-11](https://www.bibleserver.com/LUT/Matth%C3%A4us21%2C1-11)).
+
+# Caesarea Philippi
+Caesarea Philippi war eine Stadt in Nordisrael, bekannt für ihre heidnischen Tempel und als Ort, an dem Jesus seine Jünger fragte, für wen die Menschen ihn hielten ([Matthäus 16,13-20](https://www.bibleserver.com/LUT/Matth%C3%A4us16%2C13-20)).
+
+# Emmaus
+Emmaus ist ein Dorf in der Nähe von Jerusalem, das im Lukasevangelium erwähnt wird. Hier begegnete der auferstandene Jesus zwei Jüngern auf ihrem Weg und erklärte ihnen die Schrift ([Lk 24,13-35](https://www.bibleserver.com/LUT/Lukas24%2C13-35)).
+
+# Ephraim
+Ephraim ist eine Stadt in der Nähe von Jerusalem, die im Neuen Testament erwähnt wird. Nach dem Wunder der Speisung der 5000 zog sich Jesus dorthin zurück ([Johannes 11,54](https://www.bibleserver.com/LUT/Johannes11%2C54)).
+
+# Gadara
+Gadara war eine Stadt in der Dekapolis, bekannt für das Wunder, bei dem Jesus einen besessenen Mann heilte und die Dämonen in eine Herde Schweine schickte ([Mk 5,1-20](https://www.bibleserver.com/LUT/Markus5%2C1-20)).
+
+# Gerasa
+Gerasa ist eine antike Stadt in der Dekapolis und bekannt für das gleiche Wunder wie Gadara, bei dem Jesus einen besessenen Mann heilte ([Mk 5,1-20](https://www.bibleserver.com/LUT/Markus5%2C1-20)).
+
+# Hermon
+Der Berg Hermon ist ein hoher Gebirgszug im Norden Israels. Er wird oft mit der Verklärung Jesu in Verbindung gebracht ([Matthäus 17,1-9](https://www.bibleserver.com/LUT/Matth%C3%A4us17%2C1-9)).
+
+# Jericho
+Jericho ist eine der ältesten Städte der Welt und bekannt für die Heilung des blinden Bartimäus durch Jesus ([Mk 10,46-52](https://www.bibleserver.com/LUT/Markus10%2C46-52)).
+
+# Sidon
+Sidon war eine wichtige phönizische Stadt an der Mittelmeerküste. Jesus erwähnte Sidon in seinen Lehren über den Glauben und die Umkehr ([Lk 10,14](https://www.bibleserver.com/LUT/Lukas10%2C14)).
+
+# Sychar
+Sychar ist ein Dorf in Samaria, wo Jesus mit einer Samariterin am Jakobsbrunnen sprach und ihr das Wasser des Lebens anbietet ([Johannes 4,5-26](https://www.bibleserver.com/LUT/Johannes4%2C5-26)).
+
+# Tyrus
+Tyrus war eine bedeutende phönizische Hafenstadt. Jesus besuchte Tyrus und sprach über den Glauben der Menschen dort ([Mk 7,24](https://www.bibleserver.com/LUT/Markus7%2C24)).
+
+# Zarpat
+Zarpat (auch Zarephath) ist eine Stadt im heutigen Libanon. Sie wird im Alten Testament erwähnt als Ort, an dem die Witwe Elia beherbergte ([1. Könige 17,8-16](https://www.bibleserver.com/LUT/1.K%C3%B6nige17%2C8-16)).
