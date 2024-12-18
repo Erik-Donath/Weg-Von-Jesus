@@ -117,15 +117,14 @@ function loadMap(data) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('res/data.json')
+    const map = document.getElementById('map');
+    fetch(map.dataset.location)
         .then(response => errorOn404(response))
         .then(response => response.json())
         .then(data => loadMap(data))
         .catch(error => {
             console.error("Failed to load map.", error);
-
-            const div = document.getElementById("map");
-            div.innerHTML = "<p class = \"failed\">Fehler beim Laden</p>";
+            map.innerHTML = "<p class = \"failed\">Fehler beim Laden</p>";
         });
     }
 );
