@@ -1,2 +1,2 @@
 # Bethanien
-Nach dem Joh. wird Jesus hier von Johannes dem Täufer getauft(Joh 1,28). Dort soll auch eine der ersten Jüngerberufungen gewesen sein. 
+Nach dem Johannesevangelium wird Jesus hier von Johannes dem Täufer getauft ([Joh 1,28](https://www.bibleserver.com/LUT/Johannes1%2C28)). Dort soll auch eine der ersten Jüngerberufungen gewesen sein.

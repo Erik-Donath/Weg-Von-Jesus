@@ -1,2 +1,2 @@
 # Nazareth
-Jesus wuchs in Nazareth auf, einer kleinen Stadt in Galiläa. Er lebte dort mit Maria und Josef und arbeitete vermutlich als Zimmermann. (Lukas 2,39) Während seinem späterem öffentlichen Auftretend glaubte niemand an ihn als den Messias in seiner Heimatstadt.(Mk 6,1-6)
+Jesus wuchs in Nazareth auf, einer kleinen Stadt in Galiläa. Er lebte dort mit Maria und Josef und arbeitete vermutlich als Zimmermann. ([Lukas 2,39](https://www.bibleserver.com/LUT/Lukas2%2C39)) Während seines späteren öffentlichen Auftretens glaubte niemand an ihn als den Messias in seiner Heimatstadt. ([Mk 6,1-6](https://www.bibleserver.com/LUT/Markus6%2C1-6))

@@ -1,2 +1,2 @@
-# Chorszin
-An diesem Ort hat Jesus die Menschen ermahnt, da sie die Beweohnern die Werke Jesus nicht anerkennen wollten.(Mt 11,21; Lk 10,13)
+# Chorazin
+An diesem Ort hat Jesus die Menschen ermahnt, da die Bewohner die Werke Jesu nicht anerkennen wollten. ([Mt 11,21; Lk 10,13](https://www.bibleserver.com/LUT/Matth%C3%A4us11%2C21;Lukas10%2C13))
