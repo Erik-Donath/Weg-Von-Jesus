@@ -1,5 +1,5 @@
 # Weg von Jesus
-Eine Karte, welche unter Github Pages gehostet wird, aufwelcher man bei Verschiedenen Punkten Ereignisse in Jesus lebens sehen kann.
+Eine Karte, welche unter Github Pages gehostet wird, auf welcher man bei verschiedenen Punkten Ereignisse in Jesus Leben sehen kann.
 
 # Karte
 Visit: [Weg-von-Jesus](https://erik-donath.github.io/Weg-von-Jesus/).
