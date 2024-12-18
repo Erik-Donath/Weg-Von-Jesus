@@ -55,10 +55,6 @@
       "position": [38, 250]
     },
     {
-      "file": "res/-Jerusalem.md",
-      "position": [17, 199]
-    },
-    {
       "file": "res/-Sidon.md",
       "position": [481, 227]
     },
@@ -127,6 +123,10 @@
     {
       "file": "res/Bethanien.md",
       "position": [12, 212]
+    },
+    {
+      "file": "res/Jerusalem.md",
+      "position": [17, 199]
     }
   ]
 }

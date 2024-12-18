@@ -1,2 +1,2 @@
 # Kapernaum
-Jesus ist öfter in dieser Stadt, da diese der Mittelpunkt seines Wirkens in Galiläa ist. Es werden in den Evangelien mehrere Heilungen und Dämonenaustreibungen an diesem Ort berichtet. ([Mk 1,21-39](https://www.bibleserver.com/LUT/Markus1%2C21-39))
+Jesus ist öfter in dieser Stadt, da diese der Mittelpunkt seines Wirkens in Galiläa ist. Es werden in den Evangelien mehrere Heilungen und Dämonenaustreibungen an diesem Ort berichtet ([Mk 1,21-39](https://www.bibleserver.com/LUT/Markus1%2C21-39)).

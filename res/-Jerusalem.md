@@ -1,2 +1,0 @@
-# Jerusalem
-Noch nicht bearbeitet.

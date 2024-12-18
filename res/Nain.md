@@ -1,2 +1,2 @@
 # Nain
-Jüngling von Nain
+Jüngling von Nain.
