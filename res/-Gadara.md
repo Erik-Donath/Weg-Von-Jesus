@@ -1,2 +1,2 @@
 # Gadara
-Noch nicht bearbeitet.
+Gadara war eine Stadt in der Dekapolis, bekannt für das Wunder, bei dem Jesus einen besessenen Mann heilte und die Dämonen in eine Herde Schweine schickte ([Mk 5,1-20](https://www.bibleserver.com/LUT/Markus5%2C1-20)).<br><br>(Generated)

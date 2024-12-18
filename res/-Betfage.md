@@ -1,2 +1,2 @@
 # Betfage
-Noch nicht bearbeitet.
+Betfage ist ein Dorf in der Nähe von Jerusalem, das im Neuen Testament erwähnt wird. Hier befahl Jesus seinen Jüngern, einen Esel zu holen, auf dem er in die Stadt einreiten sollte ([Matthäus 21,1-11](https://www.bibleserver.com/LUT/Matth%C3%A4us21%2C1-11)).<br><br>(Generated)

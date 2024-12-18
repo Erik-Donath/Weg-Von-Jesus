@@ -1,2 +1,2 @@
 # Gerasa
-Noch nicht bearbeitet.
+Gerasa ist eine antike Stadt in der Dekapolis und bekannt für das gleiche Wunder wie Gadara, bei dem Jesus einen besessenen Mann heilte ([Mk 5,1-20](https://www.bibleserver.com/LUT/Markus5%2C1-20)).<br><br>(Generated)

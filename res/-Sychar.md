@@ -1,2 +1,2 @@
 # Sychar
-Noch nicht bearbeitet.
+Sychar ist ein Dorf in Samaria, wo Jesus mit einer Samariterin am Jakobsbrunnen sprach und ihr das Wasser des Lebens anbietet ([Johannes 4,5-26](https://www.bibleserver.com/LUT/Johannes4%2C5-26)).<br><br>(Generated)

@@ -1,2 +1,2 @@
 # Emmaus
-Noch nicht bearbeitet.
+Emmaus ist ein Dorf in der Nähe von Jerusalem, das im Lukasevangelium erwähnt wird. Hier begegnete der auferstandene Jesus zwei Jüngern auf ihrem Weg und erklärte ihnen die Schrift ([Lk 24,13-35](https://www.bibleserver.com/LUT/Lukas24%2C13-35)).<br><br>(Generated)

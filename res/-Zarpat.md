@@ -1,2 +1,2 @@
 # Zarpat
-Noch nicht bearbeitet.
+Zarpat (auch Zarephath) ist eine Stadt im heutigen Libanon. Sie wird im Alten Testament erwähnt als Ort, an dem die Witwe Elia beherbergte ([1. Könige 17,8-16](https://www.bibleserver.com/LUT/1.K%C3%B6nige17%2C8-16)).<br><br>(Generated)

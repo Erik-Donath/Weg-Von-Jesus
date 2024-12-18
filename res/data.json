@@ -17,60 +17,6 @@
       ]
     }
   ],
-  "todo-marker": [
-    {
-      "file": "res/-Arimathäa.md",
-      "position": [81, 156]
-    },
-    {
-      "file": "res/-Betfage.md",
-      "position": [19, 211]
-    },
-    {
-      "file": "res/-Caesarea Philippi.md",
-      "position": [400, 300]
-    },
-    {
-      "file": "res/-Emmaus.md",
-      "position": [32, 176]
-    },
-    {
-      "file": "res/-Ephraim.md",
-      "position": [63, 214]
-    },
-    {
-      "file": "res/-Gadara.md",
-      "position": [253, 293]
-    },
-    {
-      "file": "res/-Gerasa.md",
-      "position": [154, 351]
-    },
-    {
-      "file": "res/-Hermon.md",
-      "position": [425, 307]
-    },
-    {
-      "file": "res/-Jericho.md",
-      "position": [38, 250]
-    },
-    {
-      "file": "res/-Sidon.md",
-      "position": [481, 227]
-    },
-    {
-      "file": "res/-Sychar.md",
-      "position": [138, 214]
-    },
-    {
-      "file": "res/-Tyrus.md",
-      "position": [410, 194]
-    },
-    {
-      "file": "res/-Zarpat.md",
-      "position": [456, 210]
-    }
-  ],
   "marker": [
     {
       "file": "res/Chorszin.md",
@@ -127,6 +73,61 @@
     {
       "file": "res/Jerusalem.md",
       "position": [17, 199]
+    },
+
+
+
+    {
+      "file": "res/-Arimathäa.md",
+      "position": [81, 156]
+    },
+    {
+      "file": "res/-Betfage.md",
+      "position": [19, 211]
+    },
+    {
+      "file": "res/-Caesarea Philippi.md",
+      "position": [400, 300]
+    },
+    {
+      "file": "res/-Emmaus.md",
+      "position": [32, 176]
+    },
+    {
+      "file": "res/-Ephraim.md",
+      "position": [63, 214]
+    },
+    {
+      "file": "res/-Gadara.md",
+      "position": [253, 293]
+    },
+    {
+      "file": "res/-Gerasa.md",
+      "position": [154, 351]
+    },
+    {
+      "file": "res/-Hermon.md",
+      "position": [425, 307]
+    },
+    {
+      "file": "res/-Jericho.md",
+      "position": [38, 250]
+    },
+    {
+      "file": "res/-Sidon.md",
+      "position": [481, 227]
+    },
+    {
+      "file": "res/-Sychar.md",
+      "position": [138, 214]
+    },
+    {
+      "file": "res/-Tyrus.md",
+      "position": [410, 194]
+    },
+    {
+      "file": "res/-Zarpat.md",
+      "position": [456, 210]
     }
   ]
 }

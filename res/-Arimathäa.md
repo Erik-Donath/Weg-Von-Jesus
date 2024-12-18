@@ -1,2 +1,2 @@
-# Arimathäa ?
-Noch nicht bearbeitet.
+# Arimathäa
+Josef von Arimathäa war ein reicher Jude und wahrscheinlich ein Mitglied des Sanhedrin, der nach der Kreuzigung von Jesus um den Leichnam bat, um ihn in sein eigenes Grab zu legen ([Matthäus 27,57-60](https://www.bibleserver.com/LUT/Matth%C3%A4us27%2C57-60); [Johannes 19,38](https://www.bibleserver.com/LUT/Johannes19%2C38)).<br><br>(Generated)
