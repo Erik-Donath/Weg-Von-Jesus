@@ -1,2 +1,2 @@
 # Hermon
-Der Berg Hermon ist ein hoher Gebirgszug im Norden Israels. Er wird oft mit der Verklärung Jesu in Verbindung gebracht ([Matthäus 17,1-9](https://www.bibleserver.com/LUT/Matth%C3%A4us17%2C1-9)).<br><br>(Generated)
+Der Berg Hermon ist ein hoher Gebirgszug im Norden Israels. Er wird oft mit der Verklärung Jesu in Verbindung gebracht ([Matthäus 17,1-9](https://www.bibleserver.com/LUT/Matth%C3%A4us17%2C1-9)).

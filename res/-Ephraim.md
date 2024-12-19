@@ -1,2 +1,2 @@
 # Ephraim
-Ephraim ist eine Stadt in der Nähe von Jerusalem, die im Neuen Testament erwähnt wird. Nach dem Wunder der Speisung der 5000 zog sich Jesus dorthin zurück ([Johannes 11,54](https://www.bibleserver.com/LUT/Johannes11%2C54)).<br><br>(Generated)
+Ephraim ist eine Stadt in der Nähe von Jerusalem, die im Neuen Testament erwähnt wird. Nach dem Wunder der Speisung der 5000 zog sich Jesus dorthin zurück ([Johannes 11,54](https://www.bibleserver.com/LUT/Johannes11%2C54)).

@@ -1,2 +1,2 @@
 # Sidon
-Sidon war eine wichtige phönizische Stadt an der Mittelmeerküste. Jesus erwähnte Sidon in seinen Lehren über den Glauben und die Umkehr ([Lk 10,14](https://www.bibleserver.com/LUT/Lukas10%2C14)).<br><br>(Generated)
+Sidon war eine wichtige phönizische Stadt an der Mittelmeerküste. Jesus erwähnte Sidon in seinen Lehren über den Glauben und die Umkehr ([Lk 10,14](https://www.bibleserver.com/LUT/Lukas10%2C14)).

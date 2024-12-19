@@ -1,2 +1,2 @@
 # Caesarea Philippi
-Caesarea Philippi war eine Stadt in Nordisrael, bekannt für ihre heidnischen Tempel und als Ort, an dem Jesus seine Jünger fragte, für wen die Menschen ihn hielten ([Matthäus 16,13-20](https://www.bibleserver.com/LUT/Matth%C3%A4us16%2C13-20)).<br><br>(Generated)
+Caesarea Philippi war eine Stadt in Nordisrael, bekannt für ihre heidnischen Tempel und als Ort, an dem Jesus seine Jünger fragte, für wen die Menschen ihn hielten ([Matthäus 16,13-20](https://www.bibleserver.com/LUT/Matth%C3%A4us16%2C13-20)).
