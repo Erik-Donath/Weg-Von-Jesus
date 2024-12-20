@@ -4,23 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Weg von Jesus</title>
-
-    <!-- Extern Liberies -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-
-    <!-- Style -->
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/map.css" />
 </head>
 <body>
     <header>
         <h1><a href="index.html" class="link">Weg von Jesus</a></h1>
     </header>
     <main>
-        <div id="map" data-location="data.json"></div>
-        <script src="js/main.js"></script>
+        <iframe src="map.html" style="width: 100%; height: 100%; border: none; display: block;">
+            <p class="failed">Fehler beim laden der <a href="map.html">map.html</a></p>
+        </iframe>
     </main>
     <footer>
         <a href="https://github.com/Erik-Donath/Weg-von-Jesus/">Projekt</a> | <a href="https://github.com/Erik-Donath">&copy; Erik Donath</a>
