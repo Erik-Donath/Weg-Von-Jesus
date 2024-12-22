@@ -24,8 +24,10 @@ function parseMarkdown(markdown, path = "") {
     renderer.link = function(link) {
         if(link.href)
             link.href = adjustHref(link.href);
-        return defaultLinkRenderer.call(this, link);
-    }
+        link.title = link.title ? ` title="${link.title}"` : '';
+        //return defaultLinkRenderer.call(this, link);
+        return `<a href="${link.href}"${link.title} target="_top">${link.text}</a>`;
+    };
 
     const defaultHtmlRenderer = renderer.html;
     renderer.html = function(html) {
